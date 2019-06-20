@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HOSTS>
+<HOST>
+<HOSTNAME>openproject.pacific-textiles.com</HOSTNAME>
+<KEYPATH>/etc/ssl/certs/server.key</KEYPATH>
+<CERPATH>/etc/ssl/certs/server.crt</CERPATH>
+<COMMAND>systemctl reload apache</COMMAND>
+</HOST>
+<HOST>
+<HOSTNAME>idmdev.pacific-textiles.com</HOSTNAME>
+<KEYPATH>/opt/tomcat/conf/idm.key</KEYPATH>
+<CERPATH>/opt/tomcat/conf/idm.crt</CERPATH>
+<COMMAND>/etc/init.d/tomcat restart</COMMAND>
+</HOST>
+<HOST>
+<HOSTNAME>idmuat.pacific-textiles.com</HOSTNAME>
+<KEYPATH>/opt/tomcat/conf/idm.key</KEYPATH>
+<CERPATH>/opt/tomcat/conf/idm.crt</CERPATH>
+<COMMAND>/etc/init.d/tomcat restart</COMMAND>
+</HOST>
+<HOST>
+<HOSTNAME>idm.pacific-textiles.com</HOSTNAME>
+<KEYPATH>/opt/tomcat/conf/idm.key</KEYPATH>
+<CERPATH>/opt/tomcat/conf/idm.crt</CERPATH>
+<COMMAND>/etc/init.d/tomcat restart</COMMAND>
+</HOST>
+<HOST>
+<HOSTNAME>collabora.pacific-textiles.com</HOSTNAME>
+<KEYPATH>/etc/ssl/private/collabora.key</KEYPATH>
+<CERPATH>/etc/ssl/certs/collabora.pem</CERPATH>
+<COMMAND>systemctl reload nginx</COMMAND>
+</HOST>
+<!--add new node below line-->
+
+<HOST>
+<HOSTNAME>rancher.pacific-textiles.com</HOSTNAME>
+<KEYPATH>/etc/ssl/private/rancher.key</KEYPATH>
+<CERPATH>/etc/ssl/certs/rancher.crt</CERPATH>
+<COMMAND>systemctl reload nginx</COMMAND>
+</HOST>
+</HOSTS>
